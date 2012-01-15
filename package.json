@@ -1,0 +1,11 @@
+{
+    "name": "clipboard"
+  , "version": "0.0.1"
+  , "private": true
+  , "repository": "git://github.com/herschel666/clipboard"
+  , "dependencies": {
+      "express": "2.5.4"
+    , "jade": ">= 0.0.1"
+	, "mongoose": "2.4.1"
+  }
+}
