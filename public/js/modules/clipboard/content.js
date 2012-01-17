@@ -130,7 +130,7 @@ define(['jQuery', 'Underscore', 'Backbone', 'Observer', 'clipboard.content-tmpl'
 				this.updateNote({
 					type : 'text',
 					_id : _id,
-					text : escape(text)
+					text : escape(text.replace('<', '&lt;').replace('>', '&gt;'))
 				});
 			
 				$(document).unbind('click');
