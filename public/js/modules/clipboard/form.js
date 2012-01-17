@@ -49,7 +49,7 @@ define(['jQuery', 'Underscore', 'Backbone', 'Observer', 'clipboard.form-tmpl'], 
 				var elem = evnt.currentTarget,
 					model = new Model({
 						user : window.location.pathname.replace('/', ''),
-						text : escape(elem.value.replace('<', '&lt;').replace('>', '&gt;'))
+						text : escape(elem.value.replace(/</g, '&lt;').replace(/>/g, '&gt;'))
 					});
 			
 				this.collection.create(model);
