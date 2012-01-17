@@ -23,7 +23,7 @@ The notes created on the clipboard can be dragged to the position you want. They
 
 On the server-side the application runs on [Node.js](http://nodejs.org/). I used the [Express.js](http://expressjs.com/)-framework to build it and [Mongoose.js](http://mongoosejs.com/) to file the notes (text and position) in a [MongoDB](http://www.mongodb.org/)-database.
 
-On the client-side the application is build with [Backbone.js](http://documentcloud.github.com/backbone/) and [jQuery](http://jquery.com/). To organize and load the JavaScript-files I rely on [Require.js](http://requirejs.org/) and choose this approach: [Modular JavaScript \& Backbone.js](https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/modular-backbone). To have a solid namespace and to avoid variable declaration redundancy I choose Ben Alman's approach to namespacing Backbone.js-modules: [Organizing Your Backbone.js Application With Modules](http://weblog.bocoup.com/organizing-your-backbone-js-application-with-modules).
+On the client-side the application is build with [Backbone.js](http://documentcloud.github.com/backbone/) and [jQuery](http://jquery.com/). To organize and load the JavaScript-files I rely on [Require.js](http://requirejs.org/) and choose this approach: [Modular JavaScript \& Backbone.js](https://github.com/thomasdavis/backbonetutorials/tree/gh-pages/examples/modular-backbone).
 
 To provide the draggability of the notes I used [jQueryUI](http://jqueryui.com/).
 
