@@ -2,6 +2,8 @@
 
 Clipboard is a little Node.js-application I wrote to get in touch with Express.js and Mongoose.js. I also used this application to make my first steps with Require.js.
 
+Here you can give it a try: [Clipboard](http://clipboard.nodester.com/)
+
 ##Installing Clipboard
 
 To install Clipboard go to your Terminal and type:
