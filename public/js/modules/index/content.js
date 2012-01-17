@@ -1,8 +1,6 @@
-define(['jQuery', 'Underscore', 'Backbone', 'Namespace', 'index.content-tmpl'], function ($, _, Backbone, clipboard, tmpl) {
+define(['jQuery', 'Underscore', 'Backbone', 'index.content-tmpl'], function ($, _, Backbone, tmpl) {
 
-	var content = clipboard.module('content');
-	
-	content.View = Backbone.View.extend({
+	var View = Backbone.View.extend({
 	
 		el : $('#index'),
 		
@@ -38,6 +36,6 @@ define(['jQuery', 'Underscore', 'Backbone', 'Namespace', 'index.content-tmpl'], 
 	
 	});
 	
-	return content;
+	return View;
 
 });

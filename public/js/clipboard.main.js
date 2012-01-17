@@ -5,7 +5,7 @@ require.config({
 		'jQueryUI' : 'libs/jqueryui/jqueryui.min',
 		'Underscore' : 'libs/underscore/underscore',
 		'Backbone' : 'libs/backbone/backbone',
-		'Namespace' : 'helper/namespace/load',
+		'Observer' : 'helper/observer',
 		'niceDate' : 'helper/nice-date',
 		'clipboard.form' : 'modules/clipboard/form',
 		'clipboard.content' : 'modules/clipboard/content',
@@ -18,8 +18,8 @@ require.config({
 
 require(['clipboard.form', 'clipboard.content', 'clipboard.footer'], function (Form, Content, Footer) {
 
-	var form = new Form.View(),
-		content = new Content.View(),
-		footer = new Footer.View();
+	var form = new Form(),
+		content = new Content(),
+		footer = new Footer();
 
 });

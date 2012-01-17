@@ -1,16 +1,14 @@
-define(['jQuery', 'Underscore', 'Backbone', 'Namespace', 'clipboard.footer-tmpl'], function ($, _, Backbone, clipboard, tmpl) {
+define(['jQuery', 'Underscore', 'Backbone', 'clipboard.footer-tmpl'], function ($, _, Backbone, tmpl) {
 
-	var content = clipboard.module('footer');
+	var View = Backbone.View.extend({
+			el : $('#footer'),
+			initialize : function () {
+				this.render();
+			},
+			render : function () {
+				return this.el.html(tmpl);
+			}
+		});
 	
-	content.View = Backbone.View.extend({
-		el : $('#footer'),
-		initialize : function () {
-			this.render();
-		},
-		render : function () {
-			return this.el.html(tmpl);
-		}
-	});
-	
-	return content;
+	return View;
 });
