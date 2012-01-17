@@ -7,6 +7,11 @@ define(['jQuery', 'Underscore', 'Backbone', 'Observer', 'clipboard.form-tmpl'], 
 				pos_x : 80,
 				pos_y : 80,
 				timestamp : (function () {return Date();})()
+			},
+			validate : function (attrs) {
+				return function () {
+					console.log(attrs);
+				}();
 			}
 		}),
 			
@@ -44,7 +49,7 @@ define(['jQuery', 'Underscore', 'Backbone', 'Observer', 'clipboard.form-tmpl'], 
 				var elem = evnt.currentTarget,
 					model = new Model({
 						user : window.location.pathname.replace('/', ''),
-						text : escape(elem.value)
+						text : escape(elem.value.replace('<', '&lt;').replace('>', '&gt;'))
 					});
 			
 				this.collection.create(model);
