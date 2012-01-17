@@ -29,4 +29,4 @@ To provide the draggability of the notes I used [jQueryUI](http://jqueryui.com/)
 
 ###Misc
 
-If you have any questions write me an email (<mail@emanuel-kluge.de>) or contact me on twitter ([Herschel_R](http://twitter.com/Herschel_R)).
+If you have any questions you can contact me on [twitter](http://twitter.com/Herschel_R).
