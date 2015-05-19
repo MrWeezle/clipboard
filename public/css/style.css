@@ -230,7 +230,9 @@ body {
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		background-color: #FFF;
+		background: -moz-linear-gradient(top, rgba(60,143,255,1) 0%, rgba(49,116,204,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(60,143,255,1)), color-stop(100%,rgba(49,116,204,1)));
+		background: -webkit-linear-gradient(top, rgba(60,143,255,1) 0%,rgba(49,116,204,1) 100%);
 		border: 1px solid #111;
 		-webkit-box-shadow: 0 0 15px rgba(0,0,0,.3);
 		-moz-box-shadow: 0 0 15px rgba(0,0,0,.3);
@@ -241,15 +243,17 @@ body {
 		h1 {
 			padding: 15px 0 20px 0;
 			font-size: 16px;
-			color: #3c8fff;
+			color: #000;
 			text-align: center;
 			}
 		.inputwrap {
 			display: block;
 			padding: 10px 5px 5px 5px;
-			background-color: #3c8fff;
-			border-top: 1px solid #3174cc;
-			border-bottom: 1px solid #3174cc;
+			background: -moz-linear-gradient(top, rgba(60,143,255,1) 0%, rgba(49,116,204,1) 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(60,143,255,1)), color-stop(100%,rgba(49,116,204,1)));
+			background: -webkit-linear-gradient(top, rgba(60,143,255,1) 0%,rgba(49,116,204,1) 100%);
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #000;
 			}
 			.inputwrap input {
 				width: 280px;
@@ -257,14 +261,14 @@ body {
 				padding: 3px 4px;
 				border: 1px solid rgba(0,0,0,.6);
 				line-height: 22px;
-				color: #999;
+				color: #0;
 				font-size: 18px;
 				border-radius: 2px;
 				}
 			.inputwrap small {
 				display: block;
 				margin-top: 3px;
-				color: #111;
+				color: #000;
 				font-size: 11px;
 				text-align: center;
 				line-height: 12px;
@@ -273,10 +277,10 @@ body {
 			display: none;
 			padding: 5px 10px;
 			margin: 20px 10px 10px 10px;
-			background-color: rgba(255,60,60,.7);
+			background-color: rgba(213, 0, 0, 0.83);
 			color: #FFF;
 			text-align: center;
-			border-radius: 10px;
+			border-radius: 5px;
 			}
 	#form {
 		background: rgb(60,143,255);
