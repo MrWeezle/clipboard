@@ -66,7 +66,7 @@ define(['jQuery', 'Underscore', 'Backbone', 'Observer', 'clipboard.content-tmpl'
 					model = this.collection.filter( function (num) {
 						return num.attributes._id === _id;
 					})[0],
-					_delete = confirm('Soll die Notiz wirklich gelöscht werden?');
+					_delete = true//confirm('Soll die Notiz wirklich gelöscht werden?');
 			
 				if ( _delete ) {
 					$.post(window.location.pathname + '/delete', {_id : _id}).complete(function (data, success) {
