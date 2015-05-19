@@ -1,10 +1,10 @@
 define( function () {
 	return [
-		'<h1>Type your username and hit return</h1>',
+		'<h1>Bitte gib deinen Usernamen ein und drücke "Enter"</h1>',
 		'<span class="inputwrap">',
 		'	<input type="text">',
-		'	<small>Valid characters: a-z, 0-9, - and _</small>',
+		'	<small>Gültige Zeichen: a-z, 0-9, - und _</small>',
 		'</span>',
-		'<div>You\'ve typed an invalid character.</div>'
+		'<div>Es wurde ein ungültiges Zeichen eingegeben.</div>'
 	].join('');
 });
